@@ -1,0 +1,95 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background: linear-gradient(180deg, #3674A0 0%, #2D7AB1 0.01%, rgba(158, 27, 27, 0.65) 100%);
+	color: #d3d3d3;
+		
+}
+nav{
+	height: 40px;
+	background: linear-gradient(180deg, #423838 0%, rgba(18, 14, 14, 0.72) 100%);
+}
+ul{
+
+	display: flex;
+	justify-content: space-around;
+
+}
+a{
+	color: #d3d3d3;
+	font-family: Verdana;
+	text-decoration: none;
+}
+li{
+	margin-top: 10px;
+	list-style-type: none;
+}
+
+.lang{
+	width: 180px;
+	height: 180px;
+	border: solid black 2px;
+	border-radius: 30px;
+	margin-top: 20px;
+}
+
+.langc{
+	margin-left: 90px;
+}
+
+.langcpp{
+	margin-left: 500px;
+}
+
+.langj{
+	margin-left: 430px;
+}
+
+.langp{
+	margin-left: 480px;
+}
+
+.hspan{
+	margin-left: 10px;
+	font-size: 50px;
+	font-family: forte;
+}
+
+.star1{
+	margin-left: 10px;
+	font-size: 45px;
+	height: 90px;
+}
+
+.span1{
+	margin-left: 15px;
+	font-size: 45px;
+	font-family: forte;
+}
+
+.star2{
+	margin-left: 110px;
+	font-size: 45px;
+}
+
+.span2{
+	margin-left: 15px;
+	font-size: 45px;
+	font-family: forte;
+}	
+
+.p{
+	float: right;
+	margin-right: 40px; 
+}
+
+.hspan:hover ~ #sk{
+	/*background: linear-gradient(180deg, #423838 0%, rgba(18, 14, 14, 0.72) 100%);
+	-webkit-background-clip: text;	
+	-webkit-text-fill-color: transparent;*/
+	color: #232b2b;
+}
