@@ -5,8 +5,18 @@
 }
 
 body{
+
+	/*vh --> relative to 1% of the height of the viewport(browsers window size)
+	  here 100vh is full screen (full maximised window of the browser)
+	*/
 	height: 100vh;
 	background: linear-gradient(180deg, #3674A0 0%, #2D7AB1 0.01%, rgba(158, 27, 27, 0.65) 100%);
+	/*here the color is applied in the body for specificity reasons(the hover effect)
+	  since the interpretor goes to the specified element for checking the color, if it does not
+	  have it then it goes to it's parent element, then it's parent element like this way, finally 
+	  it goes to the body then to the html else default color will be applied	
+	*/
+	
 	color: #d3d3d3;
 }
 
@@ -14,6 +24,8 @@ nav{
 	width: 100%;
 	height: 40px;
 	background: linear-gradient(180deg, #423838 0%, rgba(18, 14, 14, 0.72) 100%);
+	/*it is used to order the elements on the z-axis, if we want to place something higher than
+	something (on top of something) then z-index should be set > 1*/
 	z-index: 2;
 }
 
@@ -53,10 +65,19 @@ li{
 	margin-left: 520px;
 }
 
-.name:hover ~ #div2{
-	/*background: linear-gradient(180deg, #423838 0%, rgba(18, 14, 14, 0.72) 100%);
+
+/*We can use ~ or + to reference to another div/span while using the hover property
+  when both are inside the same container/div (sibling)
+*/
+
+.name:hover + #div2{
+  /* The below code is used to set text as linear gradient (color)
+
+	background: linear-gradient(180deg, #423838 0%, rgba(18, 14, 14, 0.72) 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;*/
+	-webkit-text-fill-color: transparent;
+
+  */
 	color: #232b2b; 
 }
 

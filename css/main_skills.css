@@ -1,3 +1,5 @@
+/*it is better to access each element/box using it's class/id 
+rather than using the parent hierarchy*/
 *{
 	margin: 0px;
 	padding: 0px;
@@ -87,6 +89,8 @@ li{
 	margin-right: 40px; 
 }
 
+/* ~ or + both can be used (siblings) as they are enclosed inside 
+one container/div */
 .hspan:hover ~ #sk{
 	/*background: linear-gradient(180deg, #423838 0%, rgba(18, 14, 14, 0.72) 100%);
 	-webkit-background-clip: text;	
